@@ -3,7 +3,7 @@
 namespace App;
 
 use App\Traits\MultiTenantUserTrait;
-use Iatstuti\Database\Support\CascadeSoftDeletes;
+use Dyrynda\Database\Support\CascadeSoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
