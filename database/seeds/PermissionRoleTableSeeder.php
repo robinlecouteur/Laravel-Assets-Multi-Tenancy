@@ -25,6 +25,7 @@ class PermissionRoleTableSeeder extends Seeder
         $tenant_user_permissions = $all_permissions->filter(function ($permission) {
             return substr($permission->title, 0, 17) == 'asset_management_'
                 || substr($permission->title, 0, 23) == 'asset_group_management_'
+                || substr($permission->title, 0, 23) == 'user_management'
                 || substr($permission->title, 0, 16) == 'note_management_';
         });
         Role::findOrFail(3)->permissions()->sync($tenant_user_permissions);
