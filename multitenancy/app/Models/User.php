@@ -12,7 +12,7 @@ use Stancl\Tenancy\Contracts\Syncable;
 use Stancl\Tenancy\Database\Concerns\ResourceSyncing;
 use Stancl\Tenancy\Database\Models\TenantPivot;
 
-class User extends Authenticatable implements Syncable
+class User extends \TCG\Voyager\Models\User implements Syncable
 {
     use HasApiTokens, HasFactory, Notifiable, ResourceSyncing;
 
